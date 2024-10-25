@@ -13,6 +13,7 @@ var values = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "j", "q", "k"
 //   suit: { type: String, required: true },
 //   value: { type: String, required: true},
 //   color: { type: String, required: true },
+//   player: { type: String, required: true },
 // });
 
 // const Card = mongoose.model('Card', CardSchema);
@@ -23,14 +24,14 @@ function initlializeDeck() {
     for (let s = 0; s < suits.length; s++) {
         for (let v = 0; v < values.length; v++) {
             if (suits[s] === "heart" || suits[s] === "diamond") {
-                deck.push({ "suit": suits[s], "value": values[v], "color": "red" });
+                deck.push({ "suit": suits[s], "value": values[v], "color": "red" ,"player" : null});
             } else {
-                deck.push({ "suit": suits[s], "value": values[v], "color": "black" });
+                deck.push({ "suit": suits[s], "value": values[v], "color": "black" ,"player" : null});
             }
         }
     }
     return deck;
 }
 
-initlializeDeck();
+//initlializeDeck();
 // console.log(deck);
