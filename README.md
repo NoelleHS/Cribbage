@@ -16,3 +16,5 @@ Creation Date: 10/25/24
 
 
 ## References
+* for the code to shuffle a javacsript array
+https://stackoverflow.com/questions/2450954 how-to-randomize-shuffle-a-javascript-array
